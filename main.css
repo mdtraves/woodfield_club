@@ -1,9 +1,16 @@
-html, body, ul, ol, li, form, fieldset, legend {
-  margin: 0;
-  padding: 0; }
+* {
+  font-size: 20px;
+  font-family: tinos; }
+
+.container-fluid {
+  padding: 0;
+  margin: 0; }
+
+nav ul {
+  margin: 0px; }
 
 h1, h2, h3, h4, h5, h6, p {
-  margin-top: 0; }
+  margin: 0; }
 
 fieldset, img {
   border: 0; }
@@ -14,7 +21,10 @@ legend {
 li {
   list-style: none; }
 
-a {
+body a {
+  text-decoration: none; }
+
+body a:hover, a:visited, a:link, a:active {
   text-decoration: none; }
 
 sup {
@@ -39,3 +49,62 @@ input, textarea, select {
 abbr, acronym {
   border-bottom: .1em dotted;
   cursor: help; }
+
+.row {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: white;
+  color: #eacc88;
+  text-align: center;
+  border-top: 1px solid red; }
+  header h1 {
+    padding-top: 40px;
+    font-weight: 800;
+    font-size: 3em;
+    text-shadow: 0px 0px 3px red; }
+  header p {
+    padding-bottom: 40px;
+    text-shadow: 0px 0px 1px red; }
+
+.navbar {
+  background-color: #eacc88;
+  border-radius: 0px;
+  border: none;
+  margin: 0;
+  -webkit-box-shadow: 0px 0px 6px red;
+  box-shadow: 0px 0px 6px red; }
+  .navbar button .navbar-toggler-icon {
+    color: #223922; }
+  .navbar #navbarNav {
+    border: none; }
+    .navbar #navbarNav .navbar-nav {
+      width: 100%;
+      text-align: center; }
+      .navbar #navbarNav .navbar-nav li {
+        float: none;
+        display: inline-block; }
+        .navbar #navbarNav .navbar-nav li a {
+          color: #223922; }
+
+.bumper {
+  height: 30px;
+  background-color: #223922;
+  width: 100%;
+  border-bottom: 1px solid red; }
+
+.hero img {
+  max-width: 100%;
+  background-size: contain;
+  margin: 20px 0; }
+
+.banner {
+  height: 70px;
+  width: 100%;
+  background-color: #223922;
+  margin: 20px 0; }
+  .banner h2 {
+    color: #eacc88;
+    text-align: center;
+    line-height: 70px; }

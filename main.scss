@@ -1,10 +1,20 @@
-html, body, ul, ol, li, form, fieldset, legend
-{
-	margin: 0;
-	padding: 0;
+* {
+
+    font-size: 20px;
+    font-family: tinos;
+}
+.container-fluid{
+    padding: 0;
+    margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+
+
+nav ul {
+    margin: 0px
+}
+
+h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 fieldset,img { border: 0; }
 
@@ -12,7 +22,9 @@ legend { color: #000; }
 
 li { list-style: none;}
 
-a { text-decoration: none;}
+body a { text-decoration: none;}
+
+body a:hover, a:visited, a:link, a:active { text-decoration:none;}
 
 sup { vertical-align: text-top; }
 
@@ -43,25 +55,98 @@ abbr, acronym
 	cursor: help;
 }
 
-
-
+.row {
+    margin: 0;
+    padding: 0;
+}
 
 // end of css reset
 
+
+
 // variables
-
-
-
 $woodGreen: #223922;
-$woodYellow: #999966;
-
-
+$woodYellow: #eacc88;
 // variable end
 
-
-
-
-
-
+header {
+    background-color: white;
+    color: $woodYellow;
+    text-align: center;
+    border-top: 1px solid red;
     
+    h1 {
+        padding-top: 40px;
+        font-weight: 800;
+        font-size:3em;
+        text-shadow: 0px 0px 3px red
+    }
+    p{
+        padding-bottom: 40px;
+        text-shadow: 0px 0px 1px red
+    }
+    
+}
+
+.navbar {
+    background-color: $woodYellow;
+    border-radius: 0px;
+    border: none;
+    margin: 0;
+    box-shadow: 0px 0px 6px red; 
+    
+    button{
+        .navbar-toggler-icon {
+            color: $woodGreen;
+                           }
+           }
+    #navbarNav {
+        border: none;
+        .navbar-nav{
+            width: 100%;
+            text-align: center;
+           
+                li{
+                float: none;
+                display: inline-block;
+                    a {
+        color: $woodGreen;
+                }
+            }
+        }
+    }
+    
+}
+
+.bumper {
+    height:30px;
+    background-color: $woodGreen;
+    width: 100%;
+    border-bottom: 1px solid red;
+}
+
+
+.hero{
+    img{
+        max-width: 100%;
+        background-size: contain;
+        margin: 20px 0;
+    }
+}
+
+.banner {
+    height: 70px;
+    width: 100%;
+    background-color: $woodGreen;
+    margin: 20px 0;
+    h2 {
+        color: $woodYellow;
+        text-align: center;
+        line-height: 70px;
+    }
+}
+
+
+
+
 
